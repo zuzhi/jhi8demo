@@ -1,0 +1,18 @@
+{
+  "changelogDate": "20231124021622",
+  "dto": "mapstruct",
+  "entityTableName": "instrument",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Instrument",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
