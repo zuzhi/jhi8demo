@@ -1,4 +1,7 @@
 {
+  "annotations": {
+    "changelogDate": "20231124021622"
+  },
   "changelogDate": "20231124021622",
   "dto": "mapstruct",
   "entityTableName": "instrument",
