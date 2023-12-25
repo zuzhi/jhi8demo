@@ -1,6 +1,7 @@
 package com.mycompany.myapp.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.when;
 
 import com.mycompany.myapp.IntegrationTest;
 import com.mycompany.myapp.domain.User;

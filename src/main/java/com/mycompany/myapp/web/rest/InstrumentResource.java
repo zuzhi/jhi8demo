@@ -156,7 +156,7 @@ public class InstrumentResource {
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the instrumentDTO, or with status {@code 404 (Not Found)}.
      */
     @GetMapping("/{id}")
-    public ResponseEntity<InstrumentDTO> getInstrument(@PathVariable Long id) {
+    public ResponseEntity<InstrumentDTO> getInstrument(@PathVariable("id") Long id) {
         log.debug("REST request to get Instrument : {}", id);
         Optional<InstrumentDTO> instrumentDTO = instrumentService.findOne(id);
         return ResponseUtil.wrapOrNotFound(instrumentDTO);
@@ -169,7 +169,7 @@ public class InstrumentResource {
      * @return the {@link ResponseEntity} with status {@code 204 (NO_CONTENT)}.
      */
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteInstrument(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteInstrument(@PathVariable("id") Long id) {
         log.debug("REST request to delete Instrument : {}", id);
         instrumentService.delete(id);
         return ResponseEntity
